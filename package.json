@@ -1,0 +1,15 @@
+{
+  "name": "tt2",
+  "version": "1.0.0",
+  "description": "Server that saves samples from a IoT module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Enrique Sarabia",
+  "license": "ISC",
+  "dependencies": {
+    "fs-ext": "^2.0.0",
+    "path": "^0.12.7"
+  }
+}
