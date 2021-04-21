@@ -1,13 +1,36 @@
 const { Server } = require("net");
 const  parameters = require( "./parameters" );
 const archivos = require( "./archivos" );
-const host = "0.0.0.0";
+const cron = require( 'node-cron' );
+const host = "localhost";
+
+// Variable global que almacena los clientes
+let clientes = []
+
+// Cron para muestras diarias, se ejecuta a las 12:00hrs
+cron.schedule('50 19 * * *', () => {
+    clientes.forEach( cliente =>  archivos.procesa_muestras_diarias( cliente ) );
+});
+
+// Cron para muestras mensuales, se ejecuta cada primero de todos los meses
+cron.schedule('52 19 * * *', () => {
+    clientes.forEach( cliente =>  archivos.procesa_muestras_mensuales( cliente ) );
+});
+
+// Cron para muestras anuales, se ejecuta el primero de enero de todos los años
+cron.schedule('20 16 * * *', () => {
+    clientes.forEach( cliente =>  archivos.procesa_muestras_anuales( cliente ) );
+});
+
+// Cron para muestras decadas, se ejecuta el primero de enero cada 10 anios
+cron.schedule('28 16 * * *', () => {
+    clientes.forEach( cliente =>  archivos.procesa_muestras_decada( cliente ) );
+});
 
 const error = ( message ) => {
     console.error( message );
     process.exit( 1 );
 };
-
 
 const listen = (port) => {
     const server = new Server();
@@ -16,6 +39,7 @@ const listen = (port) => {
 
         let promedios = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         let module_id;
+        let add_client = true;
 
         let interval = setInterval( () => { 
             const cantidad_muestras = promedios[6]
@@ -28,10 +52,16 @@ const listen = (port) => {
                 if( sumatoria != 0 )
                     promedios_minuto[i] = sumatoria / cantidad_muestras
             }
-            archivos.agrega_muestra_diaria(module_id , promedios_minuto);
-        }, 10000);
+            archivos.agrega_muestra_diaria( module_id , promedios_minuto );
+        }, 60000);
           
-        socket.setKeepAlive( true, 5000 );
+        socket.setKeepAlive( true, 1000 );
+
+        socket.setTimeout( 10000 );
+        socket.on( 'timeout', () => {
+            console.log('socket timeout');
+            socket.end();
+        });
 
         const remoteSocket = `${socket.remoteAddress}:${socket.remotePort}`;
         console.log( `New connection from ${remoteSocket}` );
@@ -45,6 +75,11 @@ const listen = (port) => {
 
                 // Codigo del modulo
                 module_id =  String.fromCharCode( data[0] ) + String.fromCharCode( data[1] );
+
+                if( add_client ) { 
+                    clientes.push( module_id );
+                    add_client = false;
+                }
 
                 // Voltage
                 let voltage = ((data[4] << 8) | data[3]) / 10.0;
@@ -71,6 +106,9 @@ const listen = (port) => {
         socket.on( "error", ( err ) => console.error( err ) );
 
         socket.on( "close", () => {
+            clearInterval( interval )
+            filter_clientes = clientes.filter( client => client != module_id )
+            clientes = [...filter_clientes]
             console.log( `Connection with ${remoteSocket} closed` );
         });
     });
