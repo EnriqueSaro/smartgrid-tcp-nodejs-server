@@ -4,8 +4,10 @@ const { flock } = require( 'fs-ext' );
 const root = './Modules/';
 
 const agrega_muestra_diaria = ( module_id, parameters ) => {
+
     const dir = path.join(root, module_id );
-    console.log(dir);
+    console.log( dir );
+
     // Verificacion del directorio
     if( !fs.existsSync( dir ) ){
         fs.mkdirSync( dir , {recursive: true});
@@ -16,15 +18,15 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
         fs.writeFileSync( path.join(dir , '/decada.json'), '[ ]' );   // Archivo muestras del mes
     }
 
-    let current_date = new Date();
+    let current_date = new Date().toISOString();
 
     let data = {
-        "fecha": current_date.toISOString(),
+        "fecha": current_date,
         "voltaje": parameters[0],
-        "corriente": parameters[2],
+        "corriente": parameters[3],
         "potencia_aparente": parameters[5],
         "potencia_activa": parameters[4],
-        "factor_potencia": 1.3,
+        "factor_potencia": parameters[2],
         "frecuencia": parameters[1]
     }
 
@@ -32,26 +34,18 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
 
     const fd = fs.openSync( jsonday_dir, 'r+');
     flock(fd, 'ex', (err) => {
+
         if (err) {
             return console.error("Couldn't lock file");
         }
         // file is locked
         let day = fs.readFileSync( jsonday_dir );
-        let day_samples =JSON.parse(day);
-        
-        if( day_samples.length > 0){
-            let sample_date = new Date(day_samples[0].date);
+        let day_samples = JSON.parse(day);
 
-            if(current_date.getFullYear() !== sample_date.getFullYear() || 
-               current_date.getMonth() !== sample_date.getMonth() ||
-               current_date.getDate() !== sample_date.getDate() )
-               fs.writeFileSync( path.join(dir , '/day.json'), '[ ]' );
-        }
-        
-
-        day_samples.push(data);
+        day_samples.push( data );
         fs.writeFileSync( jsonday_dir , JSON.stringify( day_samples, null, '\t') );
         fs.closeSync(fd);
+        
     });    
         
 }
@@ -61,8 +55,6 @@ const agrega_muestra = ( module_id, production, name_file ) => {
     const dir = path.join( root, module_id, name_file );
     const current_date = new Date().toISOString();
 
-    
-
     let data = {
         "fecha": current_date,
         "produccion": production
@@ -70,16 +62,6 @@ const agrega_muestra = ( module_id, production, name_file ) => {
 
     const content_file = fs.readFileSync( dir );
     let content_file_samples = JSON.parse( content_file );
-
-    if( name_file === 'mensual.json'){
-        if( content_file_samples.length > 0){
-            let sample_date = new Date(content_file_samples[0].date);
-
-            if(current_date.getFullYear() !== sample_date.getFullYear() || 
-               current_date.getMonth() !== sample_date.getMonth())
-               procesa_muestras_mensuales(module_id);
-        }
-    }
 
     content_file_samples.push( data );
     fs.writeFileSync( dir , JSON.stringify( content_file_samples, null, '\t') );
@@ -91,6 +73,7 @@ const procesa_muestras_diarias =  cliente => {
 
     const dir_muestras_diarias = path.join( root, cliente, 'day.json' );
     const dir_muestras_dia_anterior = path.join( root, cliente, 'ventana.json' );
+
     const fd = fs.openSync( dir_muestras_diarias, 'r+' );
 
     flock( fd, 'ex', ( err ) => {
@@ -109,16 +92,15 @@ const procesa_muestras_diarias =  cliente => {
         fs.writeFileSync( dir_muestras_diarias, '[ ]' );
         fs.closeSync( fd );
 
-        day_samples.forEach( data => {
-            sumatoria_produccion += ( data.voltaje * data.corriente );
-        });
+        if( day_samples.length !== 0 ){
 
-        const muestras_tamanio = day_samples.length;
-        if( muestras_tamanio != 0 )
-            sumatoria_produccion = sumatoria_produccion / muestras_tamanio;
+            day_samples.forEach( data => {
+                sumatoria_produccion += ( ( data.potencia_aparente / 1000 ) * 60 );
+            });
 
-
-        agrega_muestra( cliente, sumatoria_produccion, 'mensual.json' );
+            sumatoria_produccion = sumatoria_produccion;
+            agrega_muestra( cliente, sumatoria_produccion, 'mensual.json' );
+        }
     });    
 }
 
@@ -140,15 +122,15 @@ const procesa_muestras_mensuales =  cliente => {
         fs.writeFileSync( dir_muestras_mensuales, '[ ]' );
         fs.closeSync( fd );
 
-        month_samples.forEach( data => {
-            sumatoria_produccion += data.produccion;
-        });
+        if( month_samples.length !== 0 ){
 
-        const muestras_tamanio = month_samples.length;
-        if( muestras_tamanio != 0 )
-            sumatoria_produccion = sumatoria_produccion / muestras_tamanio;
+            month_samples.forEach( data => {
+                sumatoria_produccion += data.produccion;
+            });
 
-        agrega_muestra( cliente, sumatoria_produccion, 'anual.json' );
+            sumatoria_produccion = sumatoria_produccion;
+            agrega_muestra( cliente, sumatoria_produccion, 'anual.json' );
+        }
     });
 }
 
@@ -169,15 +151,15 @@ const procesa_muestras_anuales =  cliente => {
         fs.writeFileSync( dir_muestras_anuales, '[ ]' );
         fs.closeSync( fd );
 
-        anual_samples.forEach( data => {
-            sumatoria_produccion += data.produccion;
-        });
+        if( anual_samples.length !== 0 ){
 
-        const muestras_tamanio = anual_samples.length;
-        if( muestras_tamanio != 0 )
-            sumatoria_produccion = sumatoria_produccion / muestras_tamanio;
+            anual_samples.forEach( data => {
+                sumatoria_produccion += data.produccion;
+            });
 
-        agrega_muestra( cliente, sumatoria_produccion, 'decada.json' );
+            sumatoria_produccion = sumatoria_produccion;
+            agrega_muestra( cliente, sumatoria_produccion, 'decada.json' );
+        }
     });
 }
 
@@ -196,9 +178,18 @@ const procesa_muestras_decada =  cliente => {
     });
 }
 
+const obten_directorios = ( ) => {
+
+    let getDirectories = fs.readdirSync( root, { withFileTypes: true } )
+    .filter( direc => direc.isDirectory() )
+    .map( direc => direc.name );
+    
+    return( getDirectories );
+}
+
 exports.agrega_muestra_diaria = agrega_muestra_diaria;
 exports.procesa_muestras_diarias = procesa_muestras_diarias;
 exports.procesa_muestras_mensuales = procesa_muestras_mensuales;
 exports.procesa_muestras_anuales = procesa_muestras_anuales;
 exports.procesa_muestras_decada = procesa_muestras_decada;
-
+exports.obten_directorios = obten_directorios;

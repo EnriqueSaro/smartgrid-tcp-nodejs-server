@@ -1,30 +1,31 @@
-const { Server } = require("net");
+const { Server } = require( "net" );
 const  parameters = require( "./parameters" );
 const archivos = require( "./archivos" );
 const cron = require( 'node-cron' );
-const host = "localhost";
-
-// Variable global que almacena los clientes
-let clientes = []
+const host = "0.0.0.0";
 
 // Cron para muestras diarias, se ejecuta a las 12:00hrs
-cron.schedule('50 19 * * *', () => {
-    clientes.forEach( cliente =>  archivos.procesa_muestras_diarias( cliente ) );
+cron.schedule('* * * * *', () => {
+    const getDirectories = archivos.obten_directorios();
+    getDirectories.forEach( client => archivos.procesa_muestras_diarias( client ) );
 });
 
 // Cron para muestras mensuales, se ejecuta cada primero de todos los meses
-cron.schedule('52 19 * * *', () => {
-    clientes.forEach( cliente =>  archivos.procesa_muestras_mensuales( cliente ) );
+cron.schedule('45 20 * * *', () => {
+    const getDirectories = archivos.obten_directorios();
+    getDirectories.forEach( client => archivos.procesa_muestras_mensuales( client ) );
 });
 
 // Cron para muestras anuales, se ejecuta el primero de enero de todos los años
-cron.schedule('20 16 * * *', () => {
-    clientes.forEach( cliente =>  archivos.procesa_muestras_anuales( cliente ) );
+cron.schedule('48 20 * * *', () => {
+    const getDirectories = archivos.obten_directorios();   
+    getDirectories.forEach( client => archivos.procesa_muestras_anuales( client ) );
 });
 
 // Cron para muestras decadas, se ejecuta el primero de enero cada 10 anios
-cron.schedule('28 16 * * *', () => {
-    clientes.forEach( cliente =>  archivos.procesa_muestras_decada( cliente ) );
+cron.schedule('51 20 * * *', () => {
+    const getDirectories = archivos.obten_directorios();
+    getDirectories.forEach( client => archivos.procesa_muestras_decada( client ) );
 });
 
 const error = ( message ) => {
@@ -39,7 +40,6 @@ const listen = (port) => {
 
         let promedios = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         let module_id;
-        let add_client = true;
 
         let interval = setInterval( () => { 
             const cantidad_muestras = promedios[6]
@@ -76,30 +76,26 @@ const listen = (port) => {
                 // Codigo del modulo
                 module_id =  String.fromCharCode( data[0] ) + String.fromCharCode( data[1] );
 
-                if( add_client ) { 
-                    clientes.push( module_id );
-                    add_client = false;
-                }
-
                 // Voltage
                 let voltage = ((data[4] << 8) | data[3]) / 10.0;
 
                 // Line Frecuency
                 let line_frecuency = ((data[6] << 8) | data[5]) / 1000.0;
 
+                // Power Factor
+                let power_factor = [ ( data[8] << 8 ) | data[7] ];
+                power_factor = ( Int16Array.of( power_factor )[0] ) * 0.00003051757813  ;
+
                 // Current RMS
                 let current_RMS = ((data[12] << 24) | (data[11] << 16) | (data[10] << 8) | data[9]) / 10000.0;
-
-                // Sing Active Power
-                let sign_active_power = data[2] & 0x10;
-
+                
                 // Active Power
                 let active_power = ((data[16] << 24) | (data[15] << 16) | (data[14] << 8) | data[13]) / 100.0;
 
                 // Apparent Power
                 let apparent_power = ((data[20] << 24) | (data[19] << 16) | (data[18] << 8) | data[17]) / 100.0;
                 
-                parameters.save_erase( promedios, 1, voltage, line_frecuency, current_RMS, sign_active_power, active_power, apparent_power )
+                parameters.save_erase( promedios, 1, voltage, line_frecuency, power_factor, current_RMS, active_power, apparent_power )
             }
           });
 
@@ -107,8 +103,6 @@ const listen = (port) => {
 
         socket.on( "close", () => {
             clearInterval( interval )
-            filter_clientes = clientes.filter( client => client != module_id )
-            clientes = [...filter_clientes]
             console.log( `Connection with ${remoteSocket} closed` );
         });
     });

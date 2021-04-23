@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "fs-ext": "^2.0.0",
+    "node-cron": "^3.0.0",
     "path": "^0.12.7"
   }
 }

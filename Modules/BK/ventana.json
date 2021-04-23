@@ -1,0 +1,110 @@
+[
+	{
+		"fecha": "2021-04-23T01:40:23.802Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:41:23.803Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:42:23.806Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:43:23.806Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:44:23.806Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:45:23.807Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:46:23.808Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:47:23.809Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:48:23.809Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:49:23.810Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:50:23.810Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000006,
+		"potencia_aparente": 55.030000000000065,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	},
+	{
+		"fecha": "2021-04-23T01:51:23.811Z",
+		"voltaje": 126.19999999999987,
+		"corriente": 0.4368000000000005,
+		"potencia_aparente": 55.03000000000006,
+		"potencia_activa": 30.08999999999997,
+		"factor_potencia": -1.0000000001638387,
+		"frecuencia": 60.07099999999994
+	}
+]
