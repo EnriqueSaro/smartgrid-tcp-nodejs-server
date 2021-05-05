@@ -1,5 +1,10 @@
 [
     {
-        "token":"ExponentPushToken[MolsBOCvyN5PE2NdUonYed]"
+        "token":"ExponentPushToken[MolsBOCvyN5PE2NdUonYed]",
+        "module_id":"BA"
+    },
+    {
+        "token":"ExponentPushToken[sfNjORGl9wJ3trMgijOJJL]",
+        "module_id":"BA"
     }
 ]

@@ -53,12 +53,14 @@ const listen = (port) => {
                 let sumatoria = promedios_minuto[i]
                 if( sumatoria != 0 )
                     promedios_minuto[i] = sumatoria / cantidad_muestras
-            }
-
-            if ( promedios_minuto[0] <= 1)
-                notificaciones.envia_notificacion('Danger', ' Valio chemtos el server', 'Ps valio chemtos que no estas viendo');
+            }           
                 
             archivos.agrega_muestra_diaria( module_id , promedios_minuto );
+
+            if ( promedios_minuto[0] <= 1){
+                notificaciones.envia_notificacion(module_id,'danger', 'Voltaje medido es cero', 'Los niveles de voltaje han caido demasiado, haga una inspecciòn del problema');
+                notificaciones.guardar_notificacion(module_id,'danger','Voltaje medido es cero', 'Los niveles de voltaje han caido demasiado, haga una inspecciòn del problema')
+            }
         }, 60000);
           
         socket.setKeepAlive( true, 1000 );
