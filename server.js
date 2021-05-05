@@ -1,7 +1,9 @@
 const { Server } = require( "net" );
+const cron = require( 'node-cron' );
 const  parameters = require( "./parameters" );
 const archivos = require( "./archivos" );
-const cron = require( 'node-cron' );
+const notificaciones = require('./notificaciones');
+
 const host = "0.0.0.0";
 
 // Cron para muestras diarias, se ejecuta a las 12:00hrs
@@ -42,16 +44,20 @@ const listen = (port) => {
         let module_id;
 
         let interval = setInterval( () => { 
-            const cantidad_muestras = promedios[6]
-            let promedios_minuto = [...promedios]
+            const cantidad_muestras = promedios[6];
+            let promedios_minuto = [...promedios];
 
-            parameters.save_erase( promedios, 0 ) 
+            parameters.save_erase( promedios, 0 );
 
             for( let i = 0; i < promedios_minuto.length - 1; i++ ){
                 let sumatoria = promedios_minuto[i]
                 if( sumatoria != 0 )
                     promedios_minuto[i] = sumatoria / cantidad_muestras
             }
+
+            if ( promedios_minuto[0] <= 1)
+                notificaciones.envia_notificacion('Danger', ' Valio chemtos el server', 'Ps valio chemtos que no estas viendo');
+                
             archivos.agrega_muestra_diaria( module_id , promedios_minuto );
         }, 60000);
           

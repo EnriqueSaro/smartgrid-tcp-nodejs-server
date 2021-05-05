@@ -5,7 +5,9 @@ import struct
 import pickle
 
 #parameters = [3, 3, 16, 236, 4, 167, 234, 253, 69, 16, 17, 0, 0, 193, 11, 0, 0, 127, 21, 0 , 0]
-parameters = [66, 65, 16, 236, 4, 167, 234, 253, 69, 16, 17, 0, 0, 193, 11, 0, 0, 127, 21, 0 , 0]
+#parameters = [66, 65, 16, 236, 4, 167, 234, 253, 69, 16, 17, 0, 0, 193, 11, 0, 0, 127, 21, 0 , 0]
+parameters = [66, 65, 16, 0, 0, 167, 234, 253, 69, 16, 17, 0, 0, 193, 11, 0, 0, 127, 21, 0 , 0]
+
    
 # Create a TCP/IP socket
 sock = socket.socket( socket.AF_INET, socket.SOCK_STREAM )
