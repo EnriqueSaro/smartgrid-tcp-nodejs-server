@@ -16,6 +16,35 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
         fs.writeFileSync( path.join(dir , '/mensual.json'), '[ ]' );   // Archivo muestras del mes
         fs.writeFileSync( path.join(dir , '/anual.json'), '[ ]' );   // Archivo muestras del mes
         fs.writeFileSync( path.join(dir , '/decada.json'), '[ ]' );   // Archivo muestras del mes
+        fs.writeFileSync( path.join(dir , '/notifications.json'), '[ ]' );   // Archivo de notificaciones
+        fs.writeFileSync( path.join(dir , '/always-reports.json'), `[
+            {
+                "id": 0,
+                "description":"Current day report",
+                "show": true
+            },
+            {
+                "id": 1,
+                "description":"Current two days report",
+                "show": true
+            },
+            {
+                "id": 2,
+                "description":"Current week report",
+                "show": true
+            },
+            {
+                "id": 3,
+                "description":"Current month report",
+                "show": true
+            },
+            {
+                "id": 4,
+                "description":"Current year report",
+                "show": true
+            }
+        ]`);   // Archivo de informacion de reportes
+        
     }
 
     let current_date = new Date().toISOString();
