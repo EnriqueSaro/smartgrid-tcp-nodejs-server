@@ -56,7 +56,8 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
         "potencia_aparente": parameters[5],
         "potencia_activa": parameters[4],
         "factor_potencia": parameters[2],
-        "frecuencia": parameters[1]
+        "frecuencia": parameters[1],
+        "cuadrante" : ( parameters[7] > 0 ) ? "I o IV" : "II o III" 
     }
 
     const jsonday_dir = path.join( dir , 'day.json') ;

@@ -40,7 +40,7 @@ const listen = (port) => {
 
     server.on( "connection", ( socket ) => {
 
-        let promedios = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        let promedios = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         let module_id;
 
         let interval = setInterval( () => { 
@@ -51,7 +51,7 @@ const listen = (port) => {
 
             for( let i = 0; i < promedios_minuto.length - 1; i++ ){
                 let sumatoria = promedios_minuto[i]
-                if( sumatoria != 0 )
+                if( sumatoria != 0  &&  i !==7 )
                     promedios_minuto[i] = sumatoria / cantidad_muestras
             }           
                 
@@ -84,6 +84,9 @@ const listen = (port) => {
                 // Codigo del modulo
                 module_id =  String.fromCharCode( data[0] ) + String.fromCharCode( data[1] );
 
+                // Sing Active Power
+                let sign_active_power = (data[2] & 0x10) === 1 ? 1 : -1;
+
                 // Voltage
                 let voltage = ((data[4] << 8) | data[3]) / 10.0;
 
@@ -103,7 +106,7 @@ const listen = (port) => {
                 // Apparent Power
                 let apparent_power = ((data[20] << 24) | (data[19] << 16) | (data[18] << 8) | data[17]) / 100.0;
                 
-                parameters.save_erase( promedios, 1, voltage, line_frecuency, power_factor, current_RMS, active_power, apparent_power )
+                parameters.save_erase( promedios, 1, voltage, line_frecuency, power_factor, current_RMS, active_power, apparent_power,sign_active_power )
             }
           });
 
