@@ -12,9 +12,9 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
     if( !fs.existsSync( dir ) ){
         fs.mkdirSync( dir , {recursive: true});
         fs.writeFileSync( path.join(dir , '/day.json'), '[ ]' );       // Archivo muestras diarias
-        fs.writeFileSync( path.join(dir , '/ventana.json'), '[ ]' );  // Archivo muestras dia anterior
-        fs.writeFileSync( path.join(dir , '/mensual.json'), '[ ]' );   // Archivo muestras del mes
-        fs.writeFileSync( path.join(dir , '/anual.json'), '[ ]' );   // Archivo muestras del mes
+        fs.writeFileSync( path.join(dir , '/yesterday.json'), '[ ]' );  // Archivo muestras dia anterior
+        fs.writeFileSync( path.join(dir , '/month.json'), '[ ]' );   // Archivo muestras del mes
+        fs.writeFileSync( path.join(dir , '/year.json'), '[ ]' );   // Archivo muestras del mes
         fs.writeFileSync( path.join(dir , '/decada.json'), '[ ]' );   // Archivo muestras del mes
         fs.writeFileSync( path.join(dir , '/notifications.json'), '[ ]' );   // Archivo de notificaciones
         fs.writeFileSync( path.join(dir , '/always-reports.json'), `[
@@ -102,7 +102,7 @@ const procesa_muestras_diarias =  cliente => {
     let sumatoria_produccion = 0;
 
     const dir_muestras_diarias = path.join( root, cliente, 'day.json' );
-    const dir_muestras_dia_anterior = path.join( root, cliente, 'ventana.json' );
+    const dir_muestras_dia_anterior = path.join( root, cliente, 'yesterday.json' );
 
     const fd = fs.openSync( dir_muestras_diarias, 'r+' );
 
@@ -129,7 +129,7 @@ const procesa_muestras_diarias =  cliente => {
             });
 
             sumatoria_produccion = sumatoria_produccion;
-            agrega_muestra( cliente, sumatoria_produccion, 'mensual.json' );
+            agrega_muestra( cliente, sumatoria_produccion, 'month.json' );
         }
     });    
 }
@@ -138,7 +138,7 @@ const procesa_muestras_mensuales =  cliente => {
 
     let sumatoria_produccion = 0;
 
-    const dir_muestras_mensuales = path.join( root, cliente, 'mensual.json' );
+    const dir_muestras_mensuales = path.join( root, cliente, 'month.json' );
     const fd = fs.openSync( dir_muestras_mensuales, 'r+' );
 
     flock( fd, 'ex', ( err ) => {
@@ -159,7 +159,7 @@ const procesa_muestras_mensuales =  cliente => {
             });
 
             sumatoria_produccion = sumatoria_produccion;
-            agrega_muestra( cliente, sumatoria_produccion, 'anual.json' );
+            agrega_muestra( cliente, sumatoria_produccion, 'year.json' );
         }
     });
 }
@@ -167,7 +167,7 @@ const procesa_muestras_mensuales =  cliente => {
 const procesa_muestras_anuales =  cliente => {
     let sumatoria_produccion = 0;
 
-    const dir_muestras_anuales = path.join( root, cliente, 'anual.json' );
+    const dir_muestras_anuales = path.join( root, cliente, 'year.json' );
     const fd = fs.openSync( dir_muestras_anuales, 'r+' );
 
     flock( fd, 'ex', ( err ) => {

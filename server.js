@@ -58,8 +58,8 @@ const listen = (port) => {
             archivos.agrega_muestra_diaria( module_id , promedios_minuto );
 
             if ( promedios_minuto[0] <= 1){
-                notificaciones.envia_notificacion(module_id,'danger', 'Voltaje medido es cero', 'Los niveles de voltaje han caido demasiado, haga una inspecciòn del problema');
-                notificaciones.guardar_notificacion(module_id,'danger','Voltaje medido es cero', 'Los niveles de voltaje han caido demasiado, haga una inspecciòn del problema')
+                notificaciones.envia_notificacion(module_id,'warning', 'Voltaje medido es cero', 'Los niveles de voltaje han caido demasiado, haga una inspección del problema');
+                notificaciones.guardar_notificacion(module_id,'warning', 'Los niveles de voltaje han caido demasiado, haga una inspección del problema');
             }
         }, 60000);
           
@@ -113,7 +113,9 @@ const listen = (port) => {
         socket.on( "error", ( err ) => console.error( err ) );
 
         socket.on( "close", () => {
-            clearInterval( interval )
+            clearInterval( interval );
+            notificaciones.envia_notificacion(module_id,'danger', 'Conexión con módulo cerrada', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias `);
+            notificaciones.guardar_notificacion(module_id,'danger', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias `);
             console.log( `Connection with ${remoteSocket} closed` );
         });
     });
