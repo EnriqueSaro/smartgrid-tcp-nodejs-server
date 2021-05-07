@@ -113,10 +113,7 @@ const procesa_muestras_diarias =  cliente => {
         let day = fs.readFileSync( dir_muestras_diarias );
         let day_samples = JSON.parse( day );
 
-        fs.copyFile( dir_muestras_diarias, dir_muestras_dia_anterior, ( err ) => {
-            if( err )
-                return console.error( "Couldn't copy" );
-        });
+        fs.copyFileSync( dir_muestras_diarias, dir_muestras_dia_anterior );
         
         fs.writeFileSync( dir_muestras_diarias, '[ ]' );
         fs.closeSync( fd );
