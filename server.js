@@ -50,18 +50,18 @@ const listen = (port) => {
             parameters.save_erase( promedios, 0 );
 
             for( let i = 0; i < promedios_minuto.length - 1; i++ ){
-                let sumatoria = promedios_minuto[i]
-                if( sumatoria != 0  &&  i !==7 )
-                    promedios_minuto[i] = sumatoria / cantidad_muestras
+                let sumatoria = promedios_minuto[i];
+                if( sumatoria != 0  &&  i !== 7 )
+                    promedios_minuto[i] = sumatoria / cantidad_muestras;
             }           
                 
             archivos.agrega_muestra_diaria( module_id , promedios_minuto );
 
             if ( promedios_minuto[0] <= 1){
-                notificaciones.envia_notificacion(module_id,'warning', 'Voltaje medido es cero', 'Los niveles de voltaje han caido demasiado, haga una inspección del problema');
-                notificaciones.guardar_notificacion(module_id,'warning', 'Los niveles de voltaje han caido demasiado, haga una inspección del problema');
+                notificaciones.envia_notificacion( module_id, 'warning', 'Potencia aparente cero', 'La producción aparente generada por el sistema es igual a cero, haga una inspección del problema' );
+                notificaciones.guardar_notificacion( module_id,'warning', 'La producción aparente generada por el sistema es igual a cero, haga una inspección del problema' );
             }
-        }, 60000);
+        }, 10000);
           
         socket.setKeepAlive( true, 1000 );
 
@@ -85,7 +85,7 @@ const listen = (port) => {
                 module_id =  String.fromCharCode( data[0] ) + String.fromCharCode( data[1] );
 
                 // Sing Active Power
-                let sign_active_power = (data[2] & 0x10) === 1 ? 1 : -1;
+                let sign_active_power = ( (data[2] & 0x10) === 1 ) ? 1 : -1;
 
                 // Voltage
                 let voltage = ((data[4] << 8) | data[3]) / 10.0;
@@ -114,9 +114,13 @@ const listen = (port) => {
 
         socket.on( "close", () => {
             clearInterval( interval );
-            notificaciones.envia_notificacion(module_id,'danger', 'Conexión con módulo cerrada', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias `);
-            notificaciones.guardar_notificacion(module_id,'danger', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias `);
-            console.log( `Connection with ${remoteSocket} closed` );
+            if( ( typeof module_id ) === 'string' ){
+                notificaciones.envia_notificacion( module_id, 'danger', 'Conexión con módulo cerrada', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias ` );
+                notificaciones.guardar_notificacion( module_id, 'danger', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias ` );
+            }
+            else
+                console.log( "Module id is invalid" );
+            console.log( `Connection with ${remoteSocket} closed. Module ID: ${module_id}` );
         });
     });
 

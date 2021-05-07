@@ -10,7 +10,7 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
 
     // Verificacion del directorio
     if( !fs.existsSync( dir ) ){
-        fs.mkdirSync( dir , {recursive: true});
+        fs.mkdirSync( dir , {recursive: true} );
         fs.writeFileSync( path.join(dir , '/day.json'), '[ ]' );       // Archivo muestras diarias
         fs.writeFileSync( path.join(dir , '/yesterday.json'), '[ ]' );  // Archivo muestras dia anterior
         fs.writeFileSync( path.join(dir , '/month.json'), '[ ]' );   // Archivo muestras del mes
@@ -70,12 +70,11 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
         }
         // file is locked
         let day = fs.readFileSync( jsonday_dir );
-        let day_samples = JSON.parse(day);
+        let day_samples = JSON.parse( day );
 
         day_samples.push( data );
         fs.writeFileSync( jsonday_dir , JSON.stringify( day_samples, null, '\t') );
-        fs.closeSync(fd);
-        
+        fs.closeSync( fd );   
     });    
         
 }

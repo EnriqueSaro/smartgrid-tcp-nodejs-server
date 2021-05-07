@@ -3,14 +3,15 @@ const path = require('path');
 const fs = require('fs');
 const root = './Modules/';
 
-const envia_notificacion = async (module_id,tipo,titulo,mensaje) => {
-
-    let devices = JSON.parse(fs.readFileSync( path.join(root,"dispositivos.json")));
-    let filter_devices = devices.filter((device) => device.module_id === module_id);
-    console.log(filter_devices);
+const envia_notificacion = async ( module_id, tipo, titulo, mensaje ) => {
+    const path_dispositivos = path.join( root, "dispositivos.json" );
+    const devices = JSON.parse( fs.readFileSync( path_dispositivos ) );
+    
+    let filter_devices = devices.filter( device => device.module_id === module_id );
+    console.log( filter_devices );
 
     if ( tipo === 'danger')
-        titulo = "🆘 PELIGRO: " + titulo;
+        titulo = "🆘 ERROR: " + titulo;
     else if( tipo === 'warning')
         titulo = "☢ ADVERTENCIA: " + titulo;
         
@@ -31,34 +32,36 @@ const envia_notificacion = async (module_id,tipo,titulo,mensaje) => {
     });
 }
 
-const guardar_notificacion = async (module_id,tipo,mensaje) => {
+const guardar_notificacion = async ( module_id, tipo, mensaje ) => {
+    
+    let dir = path.join( root, module_id, 'notifications.json' );
+    if( fs.existsSync( dir ) ){
+        let notifications = JSON.parse( fs.readFileSync( dir ) );
+        let date = new Date();
+        let new_id;
 
-    let dir = path.join(root,module_id, 'notifications.json');
-    let notifications = JSON.parse( fs.readFileSync(dir) );
-    let date = new Date();
-    let new_id;
+        if ( notifications.length === 0 )
+            new_id = 0;
+        else
+            new_id = notifications[notifications.length - 1].id + 1;
 
-    if ( notifications.length === 0)
-        new_id = 0;
-    else
-        new_id = notifications[notifications.length - 1].id + 1;
-
-    let new_notification = {
-        "id": new_id,
-        "type": tipo,
-        "date": date.toISOString(),
-        "description": mensaje
-    }
-
-    notifications.push(new_notification);
-
-    fs.writeFile( dir , JSON.stringify(notifications, null, '\t'), function (err) {
-        if(err){
-            console.log('Something went wrong in adding notification');
-        }else{
-            console.log('Notification added');
+        let new_notification = {
+            "id": new_id,
+            "type": tipo,
+            "date": date.toISOString(),
+            "description": mensaje
         }
-    });
+
+        notifications.push( new_notification );
+
+        fs.writeFile( dir, JSON.stringify( notifications, null, '\t' ), function ( err ) {
+            if( err ){
+                console.log( 'Something went wrong in adding notification' );
+            }else{
+                console.log( 'Notification added' );
+            }
+        });
+    }
 }
 
 exports.envia_notificacion = envia_notificacion;
