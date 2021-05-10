@@ -1,5 +1,5 @@
 const fs = require( 'fs' );
-const path = require('path');
+const path = require( 'path' );
 const { flock } = require( 'fs-ext' );
 const root = './Modules/';
 
@@ -91,19 +91,14 @@ const agrega_muestra = ( module_id, production, name_file ) => {
 
     const content_file = fs.readFileSync( dir );
     let content_file_samples = JSON.parse( content_file );
-    let samples_length = content_file_samples.length;
+    const samples_length = content_file_samples.length;
 
-    switch( name_file ){
-        case 'month.json':
-            if( !samples_length < 31 )
-                content_file_samples.shift();          
-            break;
-        case 'year.json':
-            if( !samples_length < 12)
-                content_file_samples.shift();
-            break;
-    }
-    content_file_samples.push( data );    
+    if( ( ( name_file === 'month.json' ) && !( samples_length < 31 ) ) ||
+        ( ( name_file === 'year.json' ) && !( samples_length < 12 ) ) ||
+        ( ( name_file === 'decada.json' ) && !( samples_length < 10 ) ) )
+        content_file_samples.shift();
+
+    content_file_samples.push( data );
     fs.writeFileSync( dir , JSON.stringify( content_file_samples, null, '\t') );
 }
 
@@ -144,7 +139,7 @@ const procesa_muestras_diarias =  cliente => {
 const procesa_muestras_mensuales =  cliente => {
 
     let sumatoria_produccion = 0;
-    let month = new Date().getMonth();
+
     const dir_muestras_mensuales = path.join( root, cliente, 'month.json' );
     const fd = fs.openSync( dir_muestras_mensuales, 'r+' );
 
@@ -160,9 +155,10 @@ const procesa_muestras_mensuales =  cliente => {
         fs.closeSync( fd );
 
         if( month_samples.length !== 0 ){
+            const current_month = new Date().getMonth();
 
             month_samples.forEach( data => {
-                if( new Date(data.fecha).getMonth() === month)
+                if( new Date( data.fecha ).getMonth() === current_month )
                     sumatoria_produccion += data.produccion;
             });
 
@@ -190,9 +186,11 @@ const procesa_muestras_anuales =  cliente => {
         fs.closeSync( fd );
 
         if( anual_samples.length !== 0 ){
+            const current_year = new Date().getFullYear();
 
             anual_samples.forEach( data => {
-                sumatoria_produccion += data.produccion;
+                if( new Date( data.fecha ).getFullYear() === current_year )
+                    sumatoria_produccion += data.produccion;
             });
 
             sumatoria_produccion = sumatoria_produccion;
