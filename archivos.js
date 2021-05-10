@@ -156,7 +156,7 @@ const procesa_muestras_mensuales =  cliente => {
         let month = fs.readFileSync( dir_muestras_mensuales );
         let month_samples = JSON.parse( month );
         
-        fs.writeFileSync( dir_muestras_mensuales, '[ ]' );
+        //fs.writeFileSync( dir_muestras_mensuales, '[ ]' );
         fs.closeSync( fd );
 
         if( month_samples.length !== 0 ){
@@ -186,7 +186,7 @@ const procesa_muestras_anuales =  cliente => {
         let anual = fs.readFileSync( dir_muestras_anuales );
         let anual_samples = JSON.parse( anual );
         
-        fs.writeFileSync( dir_muestras_anuales, '[ ]' );
+        //fs.writeFileSync( dir_muestras_anuales, '[ ]' );
         fs.closeSync( fd );
 
         if( anual_samples.length !== 0 ){
