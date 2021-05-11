@@ -1,0 +1,1592 @@
+[
+	{
+		"fecha": "2021-05-07T18:30:45.454Z",
+		"voltaje": 124.78000000000002,
+		"corriente": 0.0002066666666666668,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.0038333333333333336,
+		"factor_potencia": 0.17083180748241622,
+		"frecuencia": 60.047083333333305,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:31:45.454Z",
+		"voltaje": 124.81666666666673,
+		"corriente": 0.00020666666666666677,
+		"potencia_aparente": 0.020833333333333346,
+		"potencia_activa": 0.004833333333333336,
+		"factor_potencia": 0.19166564944546505,
+		"frecuencia": 60.027283333333315,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:32:45.455Z",
+		"voltaje": 124.24576271186439,
+		"corriente": 0.29307966101694916,
+		"potencia_aparente": 36.402542372881356,
+		"potencia_activa": 19.811525423728817,
+		"factor_potencia": 0.46459960945112005,
+		"frecuencia": 60.03038983050846,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:33:45.455Z",
+		"voltaje": 124.63833333333334,
+		"corriente": 0.00020333333333333341,
+		"potencia_aparente": 0.020333333333333346,
+		"potencia_activa": 0.004666666666666666,
+		"factor_potencia": 0.1999974569012572,
+		"frecuencia": 60.066099999999985,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:34:45.455Z",
+		"voltaje": 124.66666666666669,
+		"corriente": 0.0002066666666666667,
+		"potencia_aparente": 0.020833333333333346,
+		"potencia_activa": 0.006000000000000002,
+		"factor_potencia": 0.25749613448229236,
+		"frecuencia": 60.06061666666666,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:35:45.455Z",
+		"voltaje": 124.78474576271188,
+		"corriente": 0.0002101694915254238,
+		"potencia_aparente": 0.02135593220338984,
+		"potencia_activa": 0.005084745762711865,
+		"factor_potencia": 0.21186130333185124,
+		"frecuencia": 60.04023728813557,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:36:45.455Z",
+		"voltaje": 125.47833333333332,
+		"corriente": 0.00021000000000000004,
+		"potencia_aparente": 0.021333333333333346,
+		"potencia_activa": 0.0038333333333333344,
+		"factor_potencia": 0.17499847414976555,
+		"frecuencia": 60.05218333333332,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:37:45.455Z",
+		"voltaje": 125.30000000000004,
+		"corriente": 0.00020333333333333344,
+		"potencia_aparente": 0.02050000000000001,
+		"potencia_activa": 0.005666666666666669,
+		"factor_potencia": 0.2333323161189584,
+		"frecuencia": 60.06014999999999,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:38:45.456Z",
+		"voltaje": 125.4186440677966,
+		"corriente": 0.00020677966101694925,
+		"potencia_aparente": 0.020677966101694926,
+		"potencia_activa": 0.003728813559322035,
+		"factor_potencia": 0.14830405027588717,
+		"frecuencia": 60.052305084745754,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:39:45.456Z",
+		"voltaje": 125.46166666666673,
+		"corriente": 0.00020333333333333347,
+		"potencia_aparente": 0.020833333333333346,
+		"potencia_activa": 0.005666666666666669,
+		"factor_potencia": 0.2649973551866464,
+		"frecuencia": 60.06868333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:48:06.143Z",
+		"voltaje": 124.37192982456139,
+		"corriente": 0.07030701754385964,
+		"potencia_aparente": 8.73421052631579,
+		"potencia_activa": 4.78859649122807,
+		"factor_potencia": 0.2621020936558815,
+		"frecuencia": 60.027578947368404,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:49:06.140Z",
+		"voltaje": 124.61166666666666,
+		"corriente": 0.4343183333333333,
+		"potencia_aparente": 54.11466666666664,
+		"potencia_activa": 29.687833333333327,
+		"factor_potencia": 0.5485961914961321,
+		"frecuencia": 60.05246666666666,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:50:06.140Z",
+		"voltaje": 124.73333333333335,
+		"corriente": 0.4326366666666666,
+		"potencia_aparente": 53.95983333333333,
+		"potencia_activa": 29.653166666666664,
+		"factor_potencia": 0.5495305380132123,
+		"frecuencia": 60.037816666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:51:06.140Z",
+		"voltaje": 125.18813559322038,
+		"corriente": 0.7583762711864408,
+		"potencia_aparente": 94.94372881355932,
+		"potencia_activa": 42.482372881355936,
+		"factor_potencia": 0.4542738058543541,
+		"frecuencia": 60.07288135593218,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:52:06.141Z",
+		"voltaje": 125.76500000000003,
+		"corriente": 0.8198516666666664,
+		"potencia_aparente": 103.10383333333333,
+		"potencia_activa": 45.05999999999998,
+		"factor_potencia": 0.4370295207421757,
+		"frecuencia": 60.06451666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:53:06.142Z",
+		"voltaje": 125.83333333333334,
+		"corriente": 0.8177233333333334,
+		"potencia_aparente": 102.89349999999999,
+		"potencia_activa": 45.05966666666665,
+		"factor_potencia": 0.43792622891289573,
+		"frecuencia": 60.05474999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:54:06.142Z",
+		"voltaje": 126.55593220338983,
+		"corriente": 0.014152542372881334,
+		"potencia_aparente": 1.7823728813559283,
+		"potencia_activa": 0.7749152542372874,
+		"factor_potencia": 0.21079629157982294,
+		"frecuencia": 60.05871186440676,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:55:06.143Z",
+		"voltaje": 126.585,
+		"corriente": 0.00019333333333333342,
+		"potencia_aparente": 0.01950000000000001,
+		"potencia_activa": 0.004500000000000001,
+		"factor_potencia": 0.2333307902400519,
+		"frecuencia": 60.05258333333332,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:56:06.144Z",
+		"voltaje": 126.00666666666667,
+		"corriente": 0.5899116666666667,
+		"potencia_aparente": 74.15683333333335,
+		"potencia_activa": 32.484500000000004,
+		"factor_potencia": 0.43046925869683,
+		"frecuencia": 60.04331666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:57:06.145Z",
+		"voltaje": 126.35593220338984,
+		"corriente": 0.57384406779661,
+		"potencia_aparente": 72.49423728813571,
+		"potencia_activa": 31.582203389830507,
+		"factor_potencia": 0.36207296086440666,
+		"frecuencia": 60.07166101694912,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:58:06.145Z",
+		"voltaje": 126.27500000000002,
+		"corriente": 0.00021333333333333344,
+		"potencia_aparente": 0.022333333333333347,
+		"potencia_activa": 0.003166666666666667,
+		"factor_potencia": 0.10999654135916768,
+		"frecuencia": 60.05981666666665,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:59:06.145Z",
+		"voltaje": 126.08499999999998,
+		"corriente": 0.0001966666666666667,
+		"potencia_aparente": 0.019833333333333345,
+		"potencia_activa": 0.003833333333333334,
+		"factor_potencia": 0.17499796552346336,
+		"frecuencia": 60.07246666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:00:06.147Z",
+		"voltaje": 125.71864406779659,
+		"corriente": 0.3339762711864407,
+		"potencia_aparente": 41.9486440677966,
+		"potencia_activa": 23.018135593220343,
+		"factor_potencia": 0.4610869844836482,
+		"frecuencia": 60.06091525423726,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:01:06.147Z",
+		"voltaje": 125.65666666666668,
+		"corriente": 0.4307350000000001,
+		"potencia_aparente": 54.12033333333331,
+		"potencia_activa": 29.77366666666667,
+		"factor_potencia": 0.550125122160445,
+		"frecuencia": 60.08014999999997,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:02:06.147Z",
+		"voltaje": 125.0283333333333,
+		"corriente": 0.4272549999999999,
+		"potencia_aparente": 53.41450000000001,
+		"potencia_activa": 29.480166666666666,
+		"factor_potencia": 0.5519048055917264,
+		"frecuencia": 60.08764999999999,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:03:06.147Z",
+		"voltaje": 125.60166666666669,
+		"corriente": 0.031186666666666647,
+		"potencia_aparente": 3.8871666666666758,
+		"potencia_activa": 2.094666666666668,
+		"factor_potencia": 0.22784830732899738,
+		"frecuencia": 60.06986666666665,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:04:06.148Z",
+		"voltaje": 125.69152542372885,
+		"corriente": 0.0001966101694915255,
+		"potencia_aparente": 0.01983050847457628,
+		"potencia_activa": 0.004237288135593221,
+		"factor_potencia": 0.2169468766907353,
+		"frecuencia": 60.08016949152542,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:05:06.148Z",
+		"voltaje": 125.9316666666667,
+		"corriente": 0.00019666666666666674,
+		"potencia_aparente": 0.019833333333333345,
+		"potencia_activa": 0.0051666666666666675,
+		"factor_potencia": 0.2699956258580382,
+		"frecuencia": 60.088916666666655,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:06:06.148Z",
+		"voltaje": 126.02666666666669,
+		"corriente": 0.0002033333333333334,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.003500000000000001,
+		"factor_potencia": 0.1916651408191629,
+		"frecuencia": 60.05601666666665,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:07:06.148Z",
+		"voltaje": 126.74237288135593,
+		"corriente": 0.00018983050847457632,
+		"potencia_aparente": 0.019322033898305096,
+		"potencia_activa": 0.005084745762711865,
+		"factor_potencia": 0.28643540209274526,
+		"frecuencia": 60.047593220338946,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:08:06.148Z",
+		"voltaje": 126.43166666666666,
+		"corriente": 0.0001933333333333334,
+		"potencia_aparente": 0.019666666666666676,
+		"potencia_activa": 0.005000000000000002,
+		"factor_potencia": 0.279995727584937,
+		"frecuencia": 60.03564999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:09:06.149Z",
+		"voltaje": 126.57333333333335,
+		"corriente": 0.32736833333333326,
+		"potencia_aparente": 41.40483333333332,
+		"potencia_activa": 22.527166666666666,
+		"factor_potencia": 0.4410410563873644,
+		"frecuencia": 60.03733333333332,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:10:06.151Z",
+		"voltaje": 126.1271186440678,
+		"corriente": 0.46440508474576275,
+		"potencia_aparente": 58.57406779661017,
+		"potencia_activa": 31.38627118644068,
+		"factor_potencia": 0.5379188667790754,
+		"frecuencia": 60.03979661016948,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:11:06.152Z",
+		"voltaje": 126.33999999999995,
+		"corriente": 0.5685000000000001,
+		"potencia_aparente": 71.81916666666666,
+		"potencia_activa": 36.341499999999996,
+		"factor_potencia": 0.506007893963113,
+		"frecuencia": 60.049633333333304,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:12:06.152Z",
+		"voltaje": 126.13000000000001,
+		"corriente": 0.56514,
+		"potencia_aparente": 71.276,
+		"potencia_activa": 36.19966666666667,
+		"factor_potencia": 0.5078653972186256,
+		"frecuencia": 60.071183333333316,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:13:06.152Z",
+		"voltaje": 126.33728813559323,
+		"corriente": 0.5658627118644067,
+		"potencia_aparente": 71.48457627118643,
+		"potencia_activa": 36.31000000000001,
+		"factor_potencia": 0.5079340531486332,
+		"frecuencia": 60.04066101694913,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:14:06.152Z",
+		"voltaje": 126.20666666666666,
+		"corriente": 0.4953133333333332,
+		"potencia_aparente": 62.50933333333333,
+		"potencia_activa": 32.97066666666667,
+		"factor_potencia": 0.5302876791233407,
+		"frecuencia": 60.03473333333333,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:15:06.152Z",
+		"voltaje": 126.23166666666665,
+		"corriente": 0.43061999999999995,
+		"potencia_aparente": 54.353,
+		"potencia_activa": 29.93499999999999,
+		"factor_potencia": 0.5507436117438796,
+		"frecuencia": 60.06446666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:16:06.152Z",
+		"voltaje": 126.36101694915253,
+		"corriente": 0.43112542372881346,
+		"potencia_aparente": 54.47220338983051,
+		"potencia_activa": 29.98474576271187,
+		"factor_potencia": 0.550446591224984,
+		"frecuencia": 60.051016949152505,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:17:06.153Z",
+		"voltaje": 126.19666666666666,
+		"corriente": 0.4303183333333332,
+		"potencia_aparente": 54.299333333333315,
+		"potencia_activa": 29.91283333333332,
+		"factor_potencia": 0.5508794149665586,
+		"frecuencia": 60.04463333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:18:06.152Z",
+		"voltaje": 126.06833333333334,
+		"corriente": 0.4292049999999997,
+		"potencia_aparente": 54.104500000000016,
+		"potencia_activa": 29.810833333333335,
+		"factor_potencia": 0.5509724935798549,
+		"frecuencia": 60.066599999999966,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:19:06.152Z",
+		"voltaje": 126.08305084745757,
+		"corriente": 0.4293762711864406,
+		"potencia_aparente": 54.13322033898305,
+		"potencia_activa": 29.83864406779663,
+		"factor_potencia": 0.5512048754544514,
+		"frecuencia": 60.089644067796605,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:20:06.153Z",
+		"voltaje": 125.97166666666664,
+		"corriente": 0.09917666666666697,
+		"potencia_aparente": 12.460499999999984,
+		"potencia_activa": 6.693999999999996,
+		"factor_potencia": 0.3344858805886562,
+		"frecuencia": 60.09725,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:21:06.154Z",
+		"voltaje": 125.55666666666666,
+		"corriente": 0.00019666666666666677,
+		"potencia_aparente": 0.019833333333333345,
+		"potencia_activa": 0.004666666666666668,
+		"factor_potencia": 0.24999745690944924,
+		"frecuencia": 60.077149999999975,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:22:06.154Z",
+		"voltaje": 125.79499999999997,
+		"corriente": 0.00020333333333333341,
+		"potencia_aparente": 0.02050000000000001,
+		"potencia_activa": 0.0048333333333333344,
+		"factor_potencia": 0.20249837242901073,
+		"frecuencia": 60.06066666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:23:06.155Z",
+		"voltaje": 125.69661016949152,
+		"corriente": 0.0002033898305084746,
+		"potencia_aparente": 0.020677966101694926,
+		"potencia_activa": 0.0038983050847457633,
+		"factor_potencia": 0.19491266803378834,
+		"frecuencia": 60.06827118644065,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:24:06.155Z",
+		"voltaje": 124.735,
+		"corriente": 0.0002000000000000001,
+		"potencia_aparente": 0.02000000000000001,
+		"potencia_activa": 0.0036666666666666666,
+		"factor_potencia": 0.19999847415386154,
+		"frecuencia": 60.090166666666654,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:25:06.155Z",
+		"voltaje": 125.18666666666664,
+		"corriente": 0.00020333333333333347,
+		"potencia_aparente": 0.02083333333333335,
+		"potencia_activa": 0.005000000000000002,
+		"factor_potencia": 0.22833150231605573,
+		"frecuencia": 60.07288333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:26:06.157Z",
+		"voltaje": 124.90847457627122,
+		"corriente": 0.0002000000000000001,
+		"potencia_aparente": 0.02000000000000001,
+		"potencia_activa": 0.00440677966101695,
+		"factor_potencia": 0.1694889392160636,
+		"frecuencia": 60.04630508474573,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:27:06.157Z",
+		"voltaje": 125.71000000000002,
+		"corriente": 0.00020333333333333341,
+		"potencia_aparente": 0.020833333333333346,
+		"potencia_activa": 0.004333333333333333,
+		"factor_potencia": 0.23666229251924353,
+		"frecuencia": 60.06918333333329,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:28:06.157Z",
+		"voltaje": 126.2683333333333,
+		"corriente": 0.00020000000000000012,
+		"potencia_aparente": 0.020333333333333346,
+		"potencia_activa": 0.004666666666666667,
+		"factor_potencia": 0.2333287557348432,
+		"frecuencia": 60.04876666666665,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:29:06.158Z",
+		"voltaje": 125.68813559322037,
+		"corriente": 0.0001966101694915255,
+		"potencia_aparente": 0.01966101694915255,
+		"potencia_activa": 0.00457627118644068,
+		"factor_potencia": 0.1864396435024743,
+		"frecuencia": 60.09093220338981,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:30:06.159Z",
+		"voltaje": 125.91833333333331,
+		"corriente": 0.026745000000000005,
+		"potencia_aparente": 3.3721666666666663,
+		"potencia_activa": 1.6426666666666667,
+		"factor_potencia": 0.16981404625178068,
+		"frecuencia": 60.06446666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:31:06.159Z",
+		"voltaje": 126.55666666666664,
+		"corriente": 0.4389849999999999,
+		"potencia_aparente": 55.550833333333344,
+		"potencia_activa": 30.268666666666686,
+		"factor_potencia": 0.5448679607012504,
+		"frecuencia": 60.082599999999985,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:32:06.159Z",
+		"voltaje": 126.81525423728814,
+		"corriente": 0.43840508474576256,
+		"potencia_aparente": 55.590508474576254,
+		"potencia_activa": 30.338305084745762,
+		"factor_potencia": 0.5457303322861816,
+		"frecuencia": 60.047915254237274,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:33:06.159Z",
+		"voltaje": 127.09666666666662,
+		"corriente": 0.01471833333333331,
+		"potencia_aparente": 1.853999999999996,
+		"potencia_activa": 1.0081666666666662,
+		"factor_potencia": 0.25323944095945955,
+		"frecuencia": 60.053083333333305,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:34:06.159Z",
+		"voltaje": 127.13499999999998,
+		"corriente": 0.045233333333333334,
+		"potencia_aparente": 5.743,
+		"potencia_activa": 3.1311666666666667,
+		"factor_potencia": 0.24033508304718906,
+		"frecuencia": 60.07288333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:35:06.159Z",
+		"voltaje": 126.77627118644075,
+		"corriente": 0.29808474576271177,
+		"potencia_aparente": 37.79779661016949,
+		"potencia_activa": 20.616949152542368,
+		"factor_potencia": 0.4715214099686735,
+		"frecuencia": 60.06742372881352,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:36:06.159Z",
+		"voltaje": 126.57833333333329,
+		"corriente": 0.37903166666666654,
+		"potencia_aparente": 47.949,
+		"potencia_activa": 25.89916666666667,
+		"factor_potencia": 0.493667602619945,
+		"frecuencia": 60.05729999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:37:06.159Z",
+		"voltaje": 126.20333333333335,
+		"corriente": 0.6711366666666666,
+		"potencia_aparente": 84.69099999999999,
+		"potencia_activa": 39.496833333333335,
+		"factor_potencia": 0.4791392009248564,
+		"frecuencia": 60.052166666666636,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:38:06.159Z",
+		"voltaje": 125.4949152542373,
+		"corriente": 0.8141389830508473,
+		"potencia_aparente": 102.16711864406777,
+		"potencia_activa": 44.751525423728815,
+		"factor_potencia": 0.4380322473241507,
+		"frecuencia": 60.0246779661017,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:39:06.159Z",
+		"voltaje": 125.22499999999998,
+		"corriente": 0.8065799999999997,
+		"potencia_aparente": 100.99949999999998,
+		"potencia_activa": 44.44699999999999,
+		"factor_potencia": 0.44007364916064334,
+		"frecuencia": 60.0445833333333,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:45:46.010Z",
+		"voltaje": 125.10000000000002,
+		"corriente": 0.00020701754385964917,
+		"potencia_aparente": 0.02105263157894738,
+		"potencia_activa": 0.0036842105263157903,
+		"factor_potencia": 0.1736824972872281,
+		"frecuencia": 60.06987719298243,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:46:46.006Z",
+		"voltaje": 125.04999999999998,
+		"corriente": 0.0002033333333333334,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.004000000000000001,
+		"factor_potencia": 0.18333129885816205,
+		"frecuencia": 60.062699999999985,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:47:46.007Z",
+		"voltaje": 125.08833333333334,
+		"corriente": 0.0002000000000000001,
+		"potencia_aparente": 0.02000000000000001,
+		"potencia_activa": 0.0035000000000000005,
+		"factor_potencia": 0.17499847414976555,
+		"frecuencia": 60.03991666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:48:46.008Z",
+		"voltaje": 125.61016949152543,
+		"corriente": 0.0002000000000000001,
+		"potencia_aparente": 0.02000000000000001,
+		"potencia_activa": 0.005084745762711865,
+		"factor_potencia": 0.22881097312408802,
+		"frecuencia": 60.04157627118642,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:49:46.008Z",
+		"voltaje": 125.36499999999998,
+		"corriente": 0.00020000000000000006,
+		"potencia_aparente": 0.020333333333333346,
+		"potencia_activa": 0.0028333333333333335,
+		"factor_potencia": 0.11999816896497302,
+		"frecuencia": 60.06018333333332,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:50:46.008Z",
+		"voltaje": 126.4483333333334,
+		"corriente": 0.00020333333333333347,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.004166666666666667,
+		"factor_potencia": 0.21999816898135707,
+		"frecuencia": 60.04916666666666,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:51:46.009Z",
+		"voltaje": 126.17966101694918,
+		"corriente": 0.0002033898305084747,
+		"potencia_aparente": 0.020847457627118655,
+		"potencia_activa": 0.005593220338983052,
+		"factor_potencia": 0.28304588193196745,
+		"frecuencia": 60.043677966101676,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:52:46.010Z",
+		"voltaje": 127.16999999999993,
+		"corriente": 0.00019333333333333342,
+		"potencia_aparente": 0.019333333333333345,
+		"potencia_activa": 0.0045000000000000005,
+		"factor_potencia": 0.20833079023595588,
+		"frecuencia": 60.05,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:53:46.012Z",
+		"voltaje": 127.60166666666667,
+		"corriente": 0.00019000000000000006,
+		"potencia_aparente": 0.01900000000000001,
+		"potencia_activa": 0.004666666666666667,
+		"factor_potencia": 0.2749964396609409,
+		"frecuencia": 60.05259999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:54:46.013Z",
+		"voltaje": 127.47118644067791,
+		"corriente": 0.00020338983050847468,
+		"potencia_aparente": 0.020677966101694926,
+		"potencia_activa": 0.004745762711864408,
+		"factor_potencia": 0.21186130333185124,
+		"frecuencia": 60.040169491525425,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:55:46.013Z",
+		"voltaje": 127.64,
+		"corriente": 0.00019666666666666674,
+		"potencia_aparente": 0.02000000000000001,
+		"potencia_activa": 0.006166666666666669,
+		"factor_potencia": 0.2899953206855337,
+		"frecuencia": 60.06523333333332,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:56:46.013Z",
+		"voltaje": 127.77499999999996,
+		"corriente": 0.00020333333333333341,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.0051666666666666675,
+		"factor_potencia": 0.23666330977184788,
+		"frecuencia": 60.06104999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:57:46.014Z",
+		"voltaje": 127.5566666666666,
+		"corriente": 0.00020000000000000006,
+		"potencia_aparente": 0.02050000000000001,
+		"potencia_activa": 0.004666666666666669,
+		"factor_potencia": 0.24833068851724907,
+		"frecuencia": 60.06659999999997,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:58:46.014Z",
+		"voltaje": 126.90169491525423,
+		"corriente": 0.00020000000000000006,
+		"potencia_aparente": 0.02016949152542374,
+		"potencia_activa": 0.004237288135593221,
+		"factor_potencia": 0.19491370252796225,
+		"frecuencia": 60.04411864406778,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T19:59:46.017Z",
+		"voltaje": 127.69166666666666,
+		"corriente": 0.00020333333333333341,
+		"potencia_aparente": 0.020833333333333346,
+		"potencia_activa": 0.005000000000000002,
+		"factor_potencia": 0.24999745690944924,
+		"frecuencia": 60.049699999999966,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:00:46.015Z",
+		"voltaje": 126.93833333333335,
+		"corriente": 0.0002066666666666667,
+		"potencia_aparente": 0.021166666666666677,
+		"potencia_activa": 0.004666666666666668,
+		"factor_potencia": 0.20166524254606172,
+		"frecuencia": 60.05009999999997,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:01:46.015Z",
+		"voltaje": 126.80677966101702,
+		"corriente": 0.00020338983050847468,
+		"potencia_aparente": 0.020508474576271196,
+		"potencia_activa": 0.0030508474576271196,
+		"factor_potencia": 0.1525413384121746,
+		"frecuencia": 60.069627118644036,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:02:46.015Z",
+		"voltaje": 126.69166666666668,
+		"corriente": 0.00020333333333333341,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.004666666666666668,
+		"factor_potencia": 0.1783304850552594,
+		"frecuencia": 60.07293333333332,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:03:46.015Z",
+		"voltaje": 126.32499999999999,
+		"corriente": 0.00020666666666666674,
+		"potencia_aparente": 0.021166666666666677,
+		"potencia_activa": 0.005000000000000001,
+		"factor_potencia": 0.22832997643714922,
+		"frecuencia": 60.05946666666662,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:04:46.015Z",
+		"voltaje": 126.83559322033899,
+		"corriente": 0.0001932203389830509,
+		"potencia_aparente": 0.019491525423728822,
+		"potencia_activa": 0.005423728813559324,
+		"factor_potencia": 0.29660603156342646,
+		"frecuencia": 60.07328813559322,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:05:46.015Z",
+		"voltaje": 126.75166666666671,
+		"corriente": 0.0002066666666666667,
+		"potencia_aparente": 0.021166666666666677,
+		"potencia_activa": 0.004333333333333333,
+		"factor_potencia": 0.23332977298744756,
+		"frecuencia": 60.04543333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:06:46.015Z",
+		"voltaje": 126.68166666666667,
+		"corriente": 0.0002033333333333334,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.0045000000000000005,
+		"factor_potencia": 0.21166330976775188,
+		"frecuencia": 60.05436666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:07:46.015Z",
+		"voltaje": 126.96271186440677,
+		"corriente": 0.00020338983050847463,
+		"potencia_aparente": 0.020847457627118655,
+		"potencia_activa": 0.0038983050847457637,
+		"factor_potencia": 0.20338827880053717,
+		"frecuencia": 60.06603389830506,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:08:46.015Z",
+		"voltaje": 127.09333333333335,
+		"corriente": 0.00020000000000000006,
+		"potencia_aparente": 0.02050000000000001,
+		"potencia_activa": 0.0036666666666666675,
+		"factor_potencia": 0.19333140058506088,
+		"frecuencia": 60.05131666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:09:46.015Z",
+		"voltaje": 126.9966666666667,
+		"corriente": 0.00020333333333333344,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.004333333333333333,
+		"factor_potencia": 0.22833150231605573,
+		"frecuencia": 60.04711666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:10:46.016Z",
+		"voltaje": 126.84406779661015,
+		"corriente": 0.0002067796610169492,
+		"potencia_aparente": 0.021186440677966115,
+		"potencia_activa": 0.003728813559322035,
+		"factor_potencia": 0.176270048525967,
+		"frecuencia": 60.07816949152538,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:11:46.016Z",
+		"voltaje": 126.72333333333331,
+		"corriente": 0.00020666666666666677,
+		"potencia_aparente": 0.021333333333333346,
+		"potencia_activa": 0.005000000000000001,
+		"factor_potencia": 0.2383295695377459,
+		"frecuencia": 60.05221666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:17:09.208Z",
+		"voltaje": 125.3,
+		"corriente": 0.00020000000000000006,
+		"potencia_aparente": 0.020172413793103458,
+		"potencia_activa": 0.0036206896551724136,
+		"factor_potencia": 0.18447928596099022,
+		"frecuencia": 60.085224137931014,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:18:09.199Z",
+		"voltaje": 125.27966101694915,
+		"corriente": 0.00020338983050847468,
+		"potencia_aparente": 0.020677966101694926,
+		"potencia_activa": 0.004067796610169492,
+		"factor_potencia": 0.19321764932985597,
+		"frecuencia": 60.077966101694905,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:19:09.199Z",
+		"voltaje": 124.7316666666667,
+		"corriente": 0.0002066666666666668,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.004833333333333334,
+		"factor_potencia": 0.2124979655296074,
+		"frecuencia": 60.088483333333315,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:20:09.200Z",
+		"voltaje": 124.84666666666666,
+		"corriente": 0.45230333333333345,
+		"potencia_aparente": 56.463833333333326,
+		"potencia_activa": 30.80566666666667,
+		"factor_potencia": 0.5462554932535613,
+		"frecuencia": 60.11068333333338,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:21:09.200Z",
+		"voltaje": 123.9166666666667,
+		"corriente": 0.43670833333333337,
+		"potencia_aparente": 54.113499999999966,
+		"potencia_activa": 29.740000000000006,
+		"factor_potencia": 0.5495941163009831,
+		"frecuencia": 60.09019999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:22:09.205Z",
+		"voltaje": 122.91525423728814,
+		"corriente": 0.42972372881355925,
+		"potencia_aparente": 52.816949152542385,
+		"potencia_activa": 29.15949152542374,
+		"factor_potencia": 0.5520909197143954,
+		"frecuencia": 60.07769491525422,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:23:09.205Z",
+		"voltaje": 123.94333333333337,
+		"corriente": 0.43212833333333334,
+		"potencia_aparente": 53.55466666666665,
+		"potencia_activa": 29.51466666666666,
+		"factor_potencia": 0.55110524504472,
+		"frecuencia": 60.064416666666645,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:24:09.205Z",
+		"voltaje": 123.9383333333333,
+		"corriente": 0.4304083333333333,
+		"potencia_aparente": 53.33933333333335,
+		"potencia_activa": 29.425666666666675,
+		"factor_potencia": 0.5516621908455928,
+		"frecuencia": 60.07206666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:25:09.206Z",
+		"voltaje": 123.82033898305083,
+		"corriente": 0.428464406779661,
+		"potencia_aparente": 53.04847457627117,
+		"potencia_activa": 29.30033898305084,
+		"factor_potencia": 0.5523216119151746,
+		"frecuencia": 60.069915254237266,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:26:09.206Z",
+		"voltaje": 123.365,
+		"corriente": 0.42549500000000023,
+		"potencia_aparente": 52.48683333333331,
+		"potencia_activa": 29.045999999999996,
+		"factor_potencia": 0.5533889771414485,
+		"frecuencia": 60.05556666666665,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:27:09.206Z",
+		"voltaje": 123.70666666666669,
+		"corriente": 0.4259199999999999,
+		"potencia_aparente": 52.68549999999998,
+		"potencia_activa": 29.141166666666667,
+		"factor_potencia": 0.5531117758067678,
+		"frecuencia": 60.08256666666666,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:28:09.207Z",
+		"voltaje": 123.08983050847456,
+		"corriente": 0.42242881355932216,
+		"potencia_aparente": 51.99135593220338,
+		"potencia_activa": 28.829322033898304,
+		"factor_potencia": 0.5544914634449264,
+		"frecuencia": 60.05794915254235,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:29:09.207Z",
+		"voltaje": 123.56166666666671,
+		"corriente": 0.47602666666666665,
+		"potencia_aparente": 58.79399999999999,
+		"potencia_activa": 31.506666666666664,
+		"factor_potencia": 0.5381149292873836,
+		"frecuencia": 60.04586666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:30:09.208Z",
+		"voltaje": 123.03333333333332,
+		"corriente": 0.54452,
+		"potencia_aparente": 66.98883333333333,
+		"potencia_activa": 34.64199999999999,
+		"factor_potencia": 0.5171239217969653,
+		"frecuencia": 60.07204999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:31:09.208Z",
+		"voltaje": 124.1830508474576,
+		"corriente": 0.5513898305084742,
+		"potencia_aparente": 68.4686440677966,
+		"potencia_activa": 35.22101694915254,
+		"factor_potencia": 0.5144032624651063,
+		"frecuencia": 60.06562711864404,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:32:09.208Z",
+		"voltaje": 124.52999999999999,
+		"corriente": 0.5533716666666667,
+		"potencia_aparente": 68.90733333333334,
+		"potencia_activa": 35.40549999999999,
+		"factor_potencia": 0.5138127645698601,
+		"frecuencia": 60.04666666666665,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:33:09.209Z",
+		"voltaje": 124.385,
+		"corriente": 0.551085,
+		"potencia_aparente": 68.54266666666666,
+		"potencia_activa": 35.2575,
+		"factor_potencia": 0.5143854777860999,
+		"frecuencia": 60.050933333333305,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:34:09.210Z",
+		"voltaje": 124.28813559322028,
+		"corriente": 0.698316949152542,
+		"potencia_aparente": 86.785593220339,
+		"potencia_activa": 40.44338983050848,
+		"factor_potencia": 0.47186744826984256,
+		"frecuencia": 60.05271186440677,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:35:09.210Z",
+		"voltaje": 123.90333333333335,
+		"corriente": 0.7852733333333327,
+		"potencia_aparente": 97.29333333333336,
+		"potencia_activa": 43.402499999999996,
+		"factor_potencia": 0.44609527595199433,
+		"frecuencia": 60.035633333333315,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:36:09.211Z",
+		"voltaje": 124.25333333333333,
+		"corriente": 0.788486666666666,
+		"potencia_aparente": 97.96966666666667,
+		"potencia_activa": 43.63516666666668,
+		"factor_potencia": 0.44540659593886084,
+		"frecuencia": 60.063166666666646,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:37:09.211Z",
+		"voltaje": 124.17333333333335,
+		"corriente": 0.7854499999999999,
+		"potencia_aparente": 97.52666666666669,
+		"potencia_activa": 43.5685,
+		"factor_potencia": 0.44672393806147254,
+		"frecuencia": 60.082216666666646,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:38:09.211Z",
+		"voltaje": 124.31186440677963,
+		"corriente": 0.787079661016949,
+		"potencia_aparente": 97.84016949152542,
+		"potencia_activa": 43.68474576271186,
+		"factor_potencia": 0.4464959614078997,
+		"frecuencia": 60.07557627118641,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:39:09.211Z",
+		"voltaje": 125.20166666666667,
+		"corriente": 0.7994383333333331,
+		"potencia_aparente": 100.08583333333333,
+		"potencia_activa": 44.39849999999999,
+		"factor_potencia": 0.4436009725661692,
+		"frecuencia": 60.077566666666634,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:40:09.212Z",
+		"voltaje": 125.38166666666667,
+		"corriente": 0.8013750000000004,
+		"potencia_aparente": 100.4736666666667,
+		"potencia_activa": 44.52699999999997,
+		"factor_potencia": 0.44317321784604696,
+		"frecuencia": 60.08268333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:41:09.213Z",
+		"voltaje": 125.55593220338979,
+		"corriente": 0.8025118644067797,
+		"potencia_aparente": 100.7579661016949,
+		"potencia_activa": 44.63813559322034,
+		"factor_potencia": 0.44302575070155786,
+		"frecuencia": 60.09133898305084,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:42:09.213Z",
+		"voltaje": 126.19666666666669,
+		"corriente": 0.8125950000000001,
+		"potencia_aparente": 102.54299999999999,
+		"potencia_activa": 45.19083333333333,
+		"factor_potencia": 0.4406987508860061,
+		"frecuencia": 60.06614999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:43:09.214Z",
+		"voltaje": 125.97333333333326,
+		"corriente": 0.8071583333333334,
+		"potencia_aparente": 101.67716666666665,
+		"potencia_activa": 44.94316666666667,
+		"factor_potencia": 0.4420181275138267,
+		"frecuencia": 60.099300000000014,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:44:09.215Z",
+		"voltaje": 126.49491525423727,
+		"corriente": 0.8154305084745761,
+		"potencia_aparente": 103.14576271186438,
+		"potencia_activa": 45.395423728813576,
+		"factor_potencia": 0.4401203738141644,
+		"frecuencia": 60.07766101694913,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:45:09.216Z",
+		"voltaje": 126.40666666666662,
+		"corriente": 0.8134599999999996,
+		"potencia_aparente": 102.82299999999995,
+		"potencia_activa": 45.34583333333331,
+		"factor_potencia": 0.44101257331444293,
+		"frecuencia": 60.05139999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:46:09.216Z",
+		"voltaje": 125.83333333333331,
+		"corriente": 0.8028033333333332,
+		"potencia_aparente": 101.01533333333336,
+		"potencia_activa": 44.784,
+		"factor_potencia": 0.4433390300205533,
+		"frecuencia": 60.08598333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:47:09.217Z",
+		"voltaje": 126.42203389830507,
+		"corriente": 0.8124677966101695,
+		"potencia_aparente": 102.7106779661017,
+		"potencia_activa": 45.32237288135593,
+		"factor_potencia": 0.44126711060593066,
+		"frecuencia": 60.06433898305083,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:48:09.218Z",
+		"voltaje": 126.1216666666667,
+		"corriente": 0.8062183333333336,
+		"potencia_aparente": 101.68316666666668,
+		"potencia_activa": 45.03683333333332,
+		"factor_potencia": 0.4429524740309066,
+		"frecuencia": 60.10355,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:49:09.218Z",
+		"voltaje": 127.11666666666663,
+		"corriente": 0.8217566666666668,
+		"potencia_aparente": 104.45566666666667,
+		"potencia_activa": 45.87199999999999,
+		"factor_potencia": 0.4391571045641391,
+		"frecuencia": 60.08134999999999,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:50:09.219Z",
+		"voltaje": 127.51016949152545,
+		"corriente": 0.828120338983051,
+		"potencia_aparente": 105.59,
+		"potencia_activa": 46.253559322033894,
+		"factor_potencia": 0.4380477647367591,
+		"frecuencia": 60.08625423728812,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:51:09.220Z",
+		"voltaje": 127.23833333333333,
+		"corriente": 0.8228950000000002,
+		"potencia_aparente": 104.69899999999998,
+		"potencia_activa": 45.99016666666668,
+		"factor_potencia": 0.4392567953193636,
+		"frecuencia": 60.07166666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:52:09.221Z",
+		"voltaje": 127.29500000000002,
+		"corriente": 0.8228500000000001,
+		"potencia_aparente": 104.74200000000002,
+		"potencia_activa": 46.013,
+		"factor_potencia": 0.4393035889391632,
+		"frecuencia": 60.09474999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:53:09.221Z",
+		"voltaje": 126.45500000000001,
+		"corriente": 0.80942,
+		"potencia_aparente": 102.35233333333335,
+		"potencia_activa": 45.26966666666667,
+		"factor_potencia": 0.44229990648522693,
+		"frecuencia": 60.09183333333332,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:54:09.221Z",
+		"voltaje": 126.97118644067795,
+		"corriente": 0.8179864406779662,
+		"potencia_aparente": 103.85525423728815,
+		"potencia_activa": 45.76355932203392,
+		"factor_potencia": 0.44064072438363505,
+		"frecuencia": 60.08362711864405,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:55:09.221Z",
+		"voltaje": 127.33166666666669,
+		"corriente": 0.6267283333333334,
+		"potencia_aparente": 79.78666666666665,
+		"potencia_activa": 38.25616666666666,
+		"factor_potencia": 0.4975275676270877,
+		"frecuencia": 60.09603333333333,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:56:09.221Z",
+		"voltaje": 126.73833333333339,
+		"corriente": 0.42216166666666655,
+		"potencia_aparente": 53.50033333333332,
+		"potencia_activa": 29.76933333333334,
+		"factor_potencia": 0.5564300538021031,
+		"frecuencia": 60.08011666666664,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:57:09.223Z",
+		"voltaje": 126.31355932203384,
+		"corriente": 0.42158813559322034,
+		"potencia_aparente": 53.24830508474573,
+		"potencia_activa": 29.62813559322035,
+		"factor_potencia": 0.5564166571025511,
+		"frecuencia": 60.06605084745761,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:58:09.222Z",
+		"voltaje": 126.26333333333334,
+		"corriente": 0.42159499999999983,
+		"potencia_aparente": 53.228833333333355,
+		"potencia_activa": 29.56816666666667,
+		"factor_potencia": 0.555493164153512,
+		"frecuencia": 60.07744999999999,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T20:59:09.222Z",
+		"voltaje": 125.04666666666667,
+		"corriente": 0.4173766666666668,
+		"potencia_aparente": 52.187666666666665,
+		"potencia_activa": 29.07550000000001,
+		"factor_potencia": 0.5571273804623735,
+		"frecuencia": 60.07584999999997,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T21:00:09.223Z",
+		"voltaje": 125.41132075471698,
+		"corriente": 0.41936415094339624,
+		"potencia_aparente": 52.596415094339626,
+		"potencia_activa": 29.238301886792456,
+		"factor_potencia": 0.5559456304345414,
+		"frecuencia": 60.08516981132074,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:04:45.452Z",
+		"voltaje": 125.27894736842104,
+		"corriente": 0.44440877192982464,
+		"potencia_aparente": 55.670701754385966,
+		"potencia_activa": 30.542280701754386,
+		"factor_potencia": 0.5486187852118704,
+		"frecuencia": 60.038280701754374,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:05:45.443Z",
+		"voltaje": 126.10999999999999,
+		"corriente": 0.44570000000000004,
+		"potencia_aparente": 56.20416666666667,
+		"potencia_activa": 30.7885,
+		"factor_potencia": 0.5477991740806369,
+		"frecuencia": 60.06911666666665,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:06:45.444Z",
+		"voltaje": 125.58833333333335,
+		"corriente": 0.4411416666666666,
+		"potencia_aparente": 55.397999999999996,
+		"potencia_activa": 30.414666666666673,
+		"factor_potencia": 0.5490142823165131,
+		"frecuencia": 60.05343333333333,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:07:45.445Z",
+		"voltaje": 125.52711864406777,
+		"corriente": 0.43902881355932194,
+		"potencia_aparente": 55.1057627118644,
+		"potencia_activa": 30.286779661016944,
+		"factor_potencia": 0.5496029612261698,
+		"frecuencia": 60.05103389830505,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:08:45.445Z",
+		"voltaje": 125.56333333333336,
+		"corriente": 0.43820666666666663,
+		"potencia_aparente": 55.018166666666644,
+		"potencia_activa": 30.25166666666666,
+		"factor_potencia": 0.5498397828049293,
+		"frecuencia": 60.030666666666654,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:09:45.444Z",
+		"voltaje": 125.26166666666668,
+		"corriente": 0.4353316666666668,
+		"potencia_aparente": 54.52533333333335,
+		"potencia_activa": 30.025666666666677,
+		"factor_potencia": 0.5506637574144396,
+		"frecuencia": 60.03824999999998,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:10:45.445Z",
+		"voltaje": 125.42881355932202,
+		"corriente": 0.27331355932203377,
+		"potencia_aparente": 34.296610169491515,
+		"potencia_activa": 18.881355932203395,
+		"factor_potencia": 0.41308283408515806,
+		"frecuencia": 60.04410169491524,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:11:45.446Z",
+		"voltaje": 126.43333333333335,
+		"corriente": 0.00021000000000000012,
+		"potencia_aparente": 0.021500000000000012,
+		"potencia_activa": 0.007500000000000004,
+		"factor_potencia": 0.29332936609623617,
+		"frecuencia": 60.03141666666666,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:12:45.446Z",
+		"voltaje": 125.43166666666669,
+		"corriente": 0.0002000000000000001,
+		"potencia_aparente": 0.020166666666666676,
+		"potencia_activa": 0.005333333333333334,
+		"factor_potencia": 0.22499694827905106,
+		"frecuencia": 60.042516666666636,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:13:45.447Z",
+		"voltaje": 125.28813559322033,
+		"corriente": 0.00020677966101694925,
+		"potencia_aparente": 0.021016949152542385,
+		"potencia_activa": 0.004237288135593221,
+		"factor_potencia": 0.13898067153362867,
+		"frecuencia": 60.031220338983026,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:14:45.446Z",
+		"voltaje": 123.945,
+		"corriente": 0.00021000000000000006,
+		"potencia_aparente": 0.02116666666666668,
+		"potencia_activa": 0.004166666666666667,
+		"factor_potencia": 0.2074971517267047,
+		"frecuencia": 60.070466666666626,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:15:45.447Z",
+		"voltaje": 124.09166666666668,
+		"corriente": 0.0002133333333333335,
+		"potencia_aparente": 0.021333333333333346,
+		"potencia_activa": 0.006000000000000002,
+		"factor_potencia": 0.2541636149504964,
+		"frecuencia": 60.04546666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:16:45.448Z",
+		"voltaje": 123.21016949152548,
+		"corriente": 0.00021016949152542386,
+		"potencia_aparente": 0.021016949152542385,
+		"potencia_activa": 0.004745762711864407,
+		"factor_potencia": 0.22457420223488753,
+		"frecuencia": 60.069610169491476,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:17:45.447Z",
+		"voltaje": 123.73833333333337,
+		"corriente": 0.0002033333333333334,
+		"potencia_aparente": 0.020333333333333346,
+		"potencia_activa": 0.005000000000000001,
+		"factor_potencia": 0.22082977298539952,
+		"frecuencia": 60.04321666666666,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:18:45.447Z",
+		"voltaje": 122.99833333333332,
+		"corriente": 0.00020666666666666674,
+		"potencia_aparente": 0.020666666666666677,
+		"potencia_activa": 0.0035000000000000005,
+		"factor_potencia": 0.1583318074803682,
+		"frecuencia": 60.059383333333315,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:19:45.448Z",
+		"voltaje": 123.34406779661016,
+		"corriente": 0.0002000000000000001,
+		"potencia_aparente": 0.02000000000000001,
+		"potencia_activa": 0.004406779661016949,
+		"factor_potencia": 0.19491215078670138,
+		"frecuencia": 60.060949152542356,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:20:45.449Z",
+		"voltaje": 123.28500000000004,
+		"corriente": 0.00021333333333333336,
+		"potencia_aparente": 0.021333333333333346,
+		"potencia_activa": 0.0036666666666666675,
+		"factor_potencia": 0.17499847414976555,
+		"frecuencia": 60.06749999999996,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:21:45.449Z",
+		"voltaje": 123.36666666666665,
+		"corriente": 0.7730666666666666,
+		"potencia_aparente": 95.37983333333337,
+		"potencia_activa": 42.3885,
+		"factor_potencia": 0.43786163337252054,
+		"frecuencia": 60.06961666666663,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:22:45.450Z",
+		"voltaje": 123.25254237288136,
+		"corriente": 0.7889372881355929,
+		"potencia_aparente": 97.23830508474579,
+		"potencia_activa": 43.292372881355945,
+		"factor_potencia": 0.44524732694000446,
+		"frecuencia": 60.06393220338981,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:23:45.451Z",
+		"voltaje": 124.33333333333334,
+		"corriente": 0.8018099999999997,
+		"potencia_aparente": 99.68783333333336,
+		"potencia_activa": 44.03033333333333,
+		"factor_potencia": 0.44168497728590733,
+		"frecuencia": 60.04198333333333,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:24:45.451Z",
+		"voltaje": 124.19166666666668,
+		"corriente": 0.7965566666666661,
+		"potencia_aparente": 98.92383333333333,
+		"potencia_activa": 43.83900000000001,
+		"factor_potencia": 0.44317220059344264,
+		"frecuencia": 60.032249999999976,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:25:45.452Z",
+		"voltaje": 123.64745762711863,
+		"corriente": 0.786372881355932,
+		"potencia_aparente": 97.22966101694912,
+		"potencia_activa": 43.38847457627118,
+		"factor_potencia": 0.4462549242653813,
+		"frecuencia": 60.035898305084736,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:26:45.453Z",
+		"voltaje": 123.65333333333335,
+		"corriente": 0.7843516666666664,
+		"potencia_aparente": 96.98600000000002,
+		"potencia_activa": 43.34666666666668,
+		"factor_potencia": 0.44694417325031083,
+		"frecuencia": 60.041583333333314,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:27:45.453Z",
+		"voltaje": 123,
+		"corriente": 0.7727499999999997,
+		"potencia_aparente": 95.04716666666668,
+		"potencia_activa": 42.80450000000001,
+		"factor_potencia": 0.4503636678797772,
+		"frecuencia": 60.052699999999966,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:28:45.453Z",
+		"voltaje": 122.83000000000001,
+		"corriente": 0.7695849999999995,
+		"potencia_aparente": 94.52449999999997,
+		"potencia_activa": 42.66349999999999,
+		"factor_potencia": 0.4513488770270739,
+		"frecuencia": 60.02848333333331,
+		"cuadrante": "II o III"
+	},
+	{
+		"fecha": "2021-05-07T18:29:45.453Z",
+		"voltaje": 123.8491525423729,
+		"corriente": 0.4882966101694913,
+		"potencia_aparente": 60.31779661016948,
+		"potencia_activa": 27.266949152542377,
+		"factor_potencia": 0.3520575055198102,
+		"frecuencia": 60.04196610169492,
+		"cuadrante": "II o III"
+	}
+]
