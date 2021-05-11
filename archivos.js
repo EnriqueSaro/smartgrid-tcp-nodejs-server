@@ -42,6 +42,11 @@ const agrega_muestra_diaria = ( module_id, parameters ) => {
                 "id": 4,
                 "description":"Current year report",
                 "show": true
+            },
+            {
+                "id": 5,
+                "description":"Current decade report",
+                "show": true
             }
         ]`);   // Archivo de informacion de reportes
         
