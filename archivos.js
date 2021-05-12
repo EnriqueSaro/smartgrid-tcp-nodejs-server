@@ -132,7 +132,7 @@ const procesa_muestras_diarias =  cliente => {
         if( day_samples.length !== 0 ){
 
             day_samples.forEach( data => {
-                sumatoria_produccion += ( ( data.potencia_aparente / 1000 ) * 60 );
+                sumatoria_produccion += ( ( data.potencia_aparente / 1000 ) / 60 );
             });
 
             sumatoria_produccion = sumatoria_produccion;
