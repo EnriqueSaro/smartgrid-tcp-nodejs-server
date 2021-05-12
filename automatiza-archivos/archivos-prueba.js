@@ -58,7 +58,7 @@ const length_yesterday = () => {
 
 const anuales = ( ) => {
     const mensual = fs.readFileSync( 'yesterday.json' );
-    const anual = fs.readFileSync( 'year.json' );
+    const anual = fs.readFileSync( 'month.json' );
 
     const mensual_samples = JSON.parse( mensual );
     const year_samples = JSON.parse( anual );
@@ -73,7 +73,7 @@ const anuales = ( ) => {
 
         if( i == 0 )
             mensual_samples.forEach( data => {
-                sumatoria_produccion += ( ( data.potencia_aparente / 1000 ) * 60 );
+                sumatoria_produccion += ( ( data.potencia_aparente / 1000 ) / 60 );
             });
 
         else{
@@ -81,7 +81,7 @@ const anuales = ( ) => {
             let final = Math.floor( Math.random() * ( 1440 - inicio ) + inicio );
 
             for( let j = inicio; j <= final; j++ ){
-                sumatoria_produccion += ( ( mensual_samples[j].potencia_aparente / 1000 ) * 60 );
+                sumatoria_produccion += ( ( mensual_samples[j].potencia_aparente / 1000 ) / 60 );
             }
         }
 
@@ -94,11 +94,11 @@ const anuales = ( ) => {
         year_samples.push( data );
     }
     
-    fs.writeFileSync( 'year.json' , JSON.stringify( year_samples, null, '\t') );
+    fs.writeFileSync( 'month.json' , JSON.stringify( year_samples, null, '\t') );
 }
 
 const length_anuales = () => {
-    const yesterday = fs.readFileSync( 'year.json' );
+    const yesterday = fs.readFileSync( 'month.json' );
     const yesterday_samples = JSON.parse( yesterday );
 
     console.log( yesterday_samples.length );
