@@ -57,9 +57,12 @@ const listen = (port) => {
                 
             archivos.agrega_muestra_diaria( module_id , promedios_minuto );
 
-            if ( promedios_minuto[0] <= 1){
-                notificaciones.envia_notificacion( module_id, 'warning', 'Potencia aparente cero', 'La producción aparente generada por el sistema es igual a cero, haga una inspección del problema' );
-                notificaciones.guardar_notificacion( module_id,'warning', 'La producción aparente generada por el sistema es igual a cero, haga una inspección del problema' );
+            if ( promedios_minuto[5] <= 1){
+                let save_notification = notificaciones.envia_notificacion( module_id, 'warning', 'Potencia aparente cero', 'La producción aparente generada por el sistema es igual a cero, haga una inspección del problema' );
+                save_notification.then( is_saved => { 
+                    if( is_saved )
+                        notificaciones.guardar_notificacion( module_id,'warning', 'La producción aparente generada por el sistema es igual a cero, haga una inspección del problema' );
+                })
             }
         }, 10000);
           
@@ -115,8 +118,12 @@ const listen = (port) => {
         socket.on( "close", () => {
             clearInterval( interval );
             if( ( typeof module_id ) === 'string' ){
-                notificaciones.envia_notificacion( module_id, 'danger', 'Conexión con módulo cerrada', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias ` );
-                notificaciones.guardar_notificacion( module_id, 'danger', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias ` );
+                
+                let save_notification = notificaciones.envia_notificacion( module_id, 'danger', 'Conexión con módulo cerrada', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias ` );
+                save_notification.then( is_saved => { 
+                    if( is_saved )
+                        notificaciones.guardar_notificacion( module_id, 'danger', `La conexión con el módulo con ID: ${module_id} ha sido cerrada, tome las medidas necesarias ` );
+                });
             }
             else
                 console.log( "Module id is invalid" );

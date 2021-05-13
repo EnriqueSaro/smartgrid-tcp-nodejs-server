@@ -1,0 +1,15 @@
+[
+	{
+		"module_id": "BA",
+		"description": "Module from location A",
+		"token": "c2Vuc29yMTIzNA==",
+		"ranges": [
+            {
+                "idRange":0,
+                "init": 13,
+                "final":15
+            }
+        ],
+		"enable_notifications": true
+	}
+]

@@ -4,9 +4,28 @@ const fs = require('fs');
 const root = './Modules/';
 
 const envia_notificacion = async ( module_id, tipo, titulo, mensaje ) => {
-    const path_dispositivos = path.join( root, "dispositivos.json" );
+    const path_dispositivos = path.join( root, "devices.json" );
+    const path_nodes = path.join( root, "nodes-description.json" );
+
+    const nodes = JSON.parse( fs.readFileSync( path_nodes ) );
+    let module = nodes.find(node => node.module_id === module_id);
+
+    //verify if notification is enabled and not in ranges
+    if ( !module.enable_notifications ){
+        return false;
+    }else if ( module.ranges.length !== 0 ){
+        let now_hour = new Date().getHours();
+        let is_in_range =  true;
+        for (let range of module.ranges) {
+            is_in_range &= (range.init < range.final) ?
+                ( range.init <= now_hour && now_hour <= range.final - 1) :
+                ( range.init <= now_hour || now_hour <= range.final - 1)
+        }
+        if ( is_in_range )
+            return false
+    }
+        
     const devices = JSON.parse( fs.readFileSync( path_dispositivos ) );
-    
     let filter_devices = devices.filter( device => device.module_id === module_id );
     console.log( filter_devices );
 
@@ -30,6 +49,8 @@ const envia_notificacion = async ( module_id, tipo, titulo, mensaje ) => {
             console.log(error);
         });
     });
+
+    return true;
 }
 
 const guardar_notificacion = async ( module_id, tipo, mensaje ) => {
